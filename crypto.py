@@ -29,6 +29,15 @@ label_public_key.grid(row=3, sticky='w')
 label_seed = Label(root, text='seed: '+btc_wallet.seed)
 label_seed.grid(row=4, sticky='w')
 
+label_balance = Label(root, text='Balance: '+'0.00000000')
+label_balance.grid(row=5,sticky='w')
+
+sending_btc_entry = Entry(root) 
+sending_btc_entry.grid(row=6,column=0,sticky='w')
+
+send_button = Button(root, text='send')
+send_button.grid(row=6, sticky='w')
+
 
 running = True
 while running: 
